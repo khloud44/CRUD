@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      
+        <div class=" container w-50 mt-5 pt-5 shadow-lg">
+            <div class=" mb-5">
+               <h1 class="pb-2">CRUD SYSTEM</h1>
+            
+                <label>product :</label>
+                <input type="text" class="form-control mb-3" id="NamProduct" >
+                <div class="alert alert-white bg-danger AlertName d-none "  role="alert">
+                    <strong>Please, Start with capital Lettere</strong>
+                </div>
+                <label>Type :</label>
+                <input type="text" class="form-control mb-3" id="TupeProduct" >
+                <div class="alert alert-white bg-danger AlertType d-none "  role="alert">
+                    <strong>Please, Start with capital Letter</strong>
+                </div>
+                <label>Price :</label>
+                <input type="text" class="form-control mb-3" id="PriceProduct" >
+                <label>Status :</label>
+                <textarea type="text" class="form-control mb-3" id="StatProduct" ></textarea>
+                <div class="alert alert-white bg-danger d-none AlertBtn "  role="alert">
+                    <strong>Please, Full all the Fileds </strong>
+                </div>
+                <button id="Updata"  class="btn bg-success px-3 py-2 m-3 text-light d-none">Update Product</button>
+                <button id="BtnAdd"  class="btn bg-info px-3 py-2 m-3 text-light">Add Product</button>
+            </div>
+        </div>
+            <input type="text" id="Search"class="form-control my-3 mx-auto w-25 shadow my-5" placeholder="Search" >
+            <table class="table mt-4 table-striped container shadow" >
+                <thead>
+                    <th>index</th>
+                    <th>product</th>
+                    <th>Type</th>
+                    <th>price</th>
+                    <th>Status</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="Table">
+                         <!-- <tr>
+                             <td>0</td>
+                             <td>NAme</td>
+                             <td>type</td>
+                             <td>price</td>
+                             <td>state</td>
+                             <td><button class="btn btn-warning" ><i class="fas fa-Edit"></i></button></td>
+                             <td><button class="btn btn-danger" ><i class="fas fa-trash-alt "></i></button></td>
+                            
+                         </tr> -->
+                    
+                </tbody>
+            </table>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/mine.js"></script> -->
+        <!-- <script src="js/crud.js"></script> -->
+        <script src="js/new.js"></script>
+    </body>
+</html>
